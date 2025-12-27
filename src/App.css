@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(236, 218, 221);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.head {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* FLEX CONTAINER */
+.condinar {
+  display: flex;
+  flex-wrap: wrap;          /* allows multiple rows */
+  justify-content: center;  /* center cards horizontally */
+  gap: 20px;                /* space between cards */
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background-color: rgb(135, 214, 210);
+  width: 290px;
+  height: 350px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* IMAGE WRAPPER */
+.card img {
+  
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;           /* zoom stays inside border */
+  transition: transform 0.5s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);      /* zoom effect */
+}
+
+/* TEXT */
+.card h6, .card h4, .card h5, .card p {
+  margin: 5px 0;
+}
+
+
+/* about page */
+/* ABOUT PAGE CONTAINER */
+.card-container {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 90vh;          /* take most of the screen height */
+  padding: 20px;
+  background-color: rgb(236, 218, 221);
+}
+
+/* SINGLE PRODUCT CARD */
+.about-card {
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  max-width: 90%;            /* responsive on smaller screens */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                 /* space between elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* PRODUCT IMAGE */
+.about-card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+.about-card img:hover{
+transform: scale(1.5);}
+
+
+
+/* TEXT */
+.about-card h4 {
+  margin: 10px 0 5px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.about-card h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* BACK LINK */
+.about-card a {
+  margin-top: 15px;
+  color: #2167ad;
+  text-decoration: none;
+  font-weight: 500;
+}
